@@ -1,3 +1,10 @@
+:root{
+    --mainColor: #4286f4;
+    --h: 0;
+    --s: 0%;
+    --l: 26%;
+}
+
 body, html{
     width: 100%;
     height: 100%;
@@ -5,18 +12,40 @@ body, html{
     padding: 0;
 }
 
+h1, p, li{
+    background: #1976D2;
+    display: inline-block;
+    padding: 2%;
+}
+
+ul{
+    padding: 0;
+}
+
+footer ul li{
+    background: none;
+}
+
+h1{
+    font-size: 3em;
+}
+
 .logo_wrap img{
-    height: 140px;
+    height: 100px;
     width: auto;
     position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     top: 10%;
-    right: 42%;
+    z-index: 5;
 }
 
 .main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 100%;
+    height: calc(100vh - 105.6px);
 }
 
 .main_tittle{
@@ -25,11 +54,16 @@ body, html{
 }
 
 .dance{
-    background: rgba(161, 162, 163, 0.8);
+    /*background-color: hsl(var(--h), var(--s), calc(5% + var(--l)));*/
+    background: url(../img/1.jpg);
+    box-shadow: 10px 0 5px -2px #888;
 }
 
 .webdev{
-    background: rgba(161, 162, 163, 1);
+    /*background-color: hsl(var(--h), var(--s), calc(10% + var(--l)));*/
+    background: url(../img/2.jpg);
+    
+    
 }
 
 .dance, .webdev{
@@ -37,6 +71,11 @@ body, html{
     width: 100%;
     display: grid;
     align-content: center;
+    color: white;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .navigation{
@@ -45,24 +84,24 @@ body, html{
 
 .navigation li{
     display: inline;
+    margin: 0 2%;
 }
 
 .navigation a{
     text-decoration: none;
-    padding: 0 2% 0 0;
+    padding: 0 2%;
     color: white;
 }
 
 .content{
-    padding: 0 5%;
+    padding: 0% 5%;
 }
 
 footer{
-    background: rgba(0, 0, 0, 1);
+    /*background-color: hsl(var(--h), var(--s), var(--l));*/
+    background: #1976D2;
     text-align: center;
-    padding: 2% 0;
-    position: absolute;
-    bottom: 0;
+    padding: 20px 0;
     width: 100%;
 }
 
