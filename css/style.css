@@ -59,13 +59,13 @@ h1{
 
 .dance{
     /*background-color: hsl(var(--h), var(--s), calc(5% + var(--l)));*/
-    background: url(../img/1.jpg);
+    background: url(../img/dance1.jpg);
     box-shadow: 10px 0 5px -2px #888;
 }
 
 .webdev{
     /*background-color: hsl(var(--h), var(--s), calc(10% + var(--l)));*/
-    background: url(../img/2.jpg);
+    background: url(../img/webdev1.jpg);
     
     
 }
