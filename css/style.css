@@ -34,6 +34,10 @@ h1{
     right: 0;
     top: 10%;
     z-index: 5;
+    padding: 1%;
+    background: #1976D2;
+    padding: 1.5%;
+    border-radius: 10px;
 }
 
 .main{
@@ -44,10 +48,13 @@ h1{
 
 .main_tittle{
     color: white;
-    background: #1976D2;
     display: inline-block;
-    padding: 1% 2%;
     text-shadow: 0px 1px 1px black;
+    border-radius: 10px;
+    background: #1976D2;
+    border-radius: 10px;
+    padding: 1% 2%;
+
 }
 
 .dance{
@@ -82,16 +89,20 @@ h1{
 .navigation li{
     display: inline;
     margin: 0 2%;
+    padding: 1%;
 }
 
 .navigation li:hover{
-    border-bottom: 2px solid #1976D2;
+    background: #1976D2;
+    border-radius: 10px;
 }
 
 .navigation a{
     text-decoration: none;
     padding: 0 2%;
     color: white;
+    font-size: 20px;
+    text-shadow: 0px 1px 1px black;
 }
 
 .content{
