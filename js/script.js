@@ -1,4 +1,9 @@
 let footer = document.querySelector("footer");
 let main = document.querySelector(".main");
-let footerHeight = footer.getBoundingClientRect().height;
-main.style.height = "calc(100vh - " + footerHeight + "px)";
+let logoWrap = document.querySelector(".logo_wrap img");
+let name = document.querySelector(".name");
+logoWrap.addEventListener("mouseover", logoHoverHandler);
+
+function logoHoverHandler() {
+    //name.classList.toggle("name_active");
+}

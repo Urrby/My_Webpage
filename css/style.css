@@ -34,9 +34,38 @@ h1{
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 10%;
+    top: 5%;
     z-index: 5;
 }
+
+.name{
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    width: auto;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 60px;
+    z-index: 5;
+    opacity: 0;
+    transition: fade 0.5s ease-in;
+    transition: .2s all ease-out;
+}
+
+.name_active{
+    z-index: 1;
+}
+
+.logo_wrap img:hover + .name_active{
+    opacity: 1;
+    transition: fade 0.5s ease-in;
+    transform: translateY(65px);
+    transition: .2s all ease-out;
+}
+
 
 .main{
     display: grid;
@@ -82,11 +111,14 @@ h1{
     display: inline;
     margin: 0 2%;
     padding: 1%;
+    border-bottom: 1px solid white;
 }
 
 .navigation li:hover{
-    border-bottom: 2px solid #1976D2;
+    border-bottom: 1px solid #1976D2;
+    transition: border-bottom .5s;
 }
+
 
 .navigation a{
     text-decoration: none;
@@ -143,6 +175,11 @@ footer li{
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 @media(max-width: 950px){
